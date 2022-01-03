@@ -208,8 +208,6 @@ button.disabled:hover {
 <body>
 <h1>Waifu Impact</h1>
 
-<div id="container">
-
 <div id="picking">
 <ul id="evaluating" class="item-list">
 </ul>
@@ -282,7 +280,8 @@ var items = [
 ];
 
 var myPicker = new picker.Picker({
-    items: items
+    items: items,
+    localStorageKey: 'genshin-state'
 });
 
 var pickerUI = new PickerUI(myPicker, {
